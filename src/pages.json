@@ -1,0 +1,40 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/Index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/mine/Index",
+			"style": {
+				"navigationBarTitleText": "会员中心"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/Index",
+			"text": "首页"
+		},{
+			"pagePath": "pages/mine/Index",
+			"text": "我的"
+		}]
+	},
+	"easycom": {
+		"custom": {
+			"^hy-(.*)": "hy-app/components/hy-$1/hy-$1.vue"
+		}
+	}
+}
