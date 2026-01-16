@@ -1,7 +1,16 @@
 import { defineConfig } from 'vite';
-import uni from '@dcloudio/vite-plugin-uni';
+import { resolve } from 'path';
+import uni from '@uni-helper/plugin-uni';
+import UniPages from '@uni-helper/vite-plugin-uni-pages';
+import { useUniPages } from './src/composables'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [uni()],
+  plugins: [UniPages(useUniPages), uni()],
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src')
+    }
+  }
 });
+
