@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import TheCommonPages from '@/components/TheCommonPages.vue';
+
 definePage({
     style: {
         navigationBarTitleText: '我的',
@@ -7,9 +9,7 @@ definePage({
 </script>
 
 <template>
-    <hy-config-provider>
-        <view class="body"> </view>
-    </hy-config-provider>
+    <the-common-pages></the-common-pages>
 </template>
 
 <style lang="scss" scoped></style>
