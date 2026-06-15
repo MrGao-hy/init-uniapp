@@ -1,4 +1,5 @@
 import Http from 'hy-app/api/http';
+import { apiConfig } from '@/config/env';
 
 const http = new Http();
 const apiMessage = (msg: string, isLogin?: boolean) => {
@@ -17,7 +18,7 @@ const apiMessage = (msg: string, isLogin?: boolean) => {
 };
 
 http.config = {
-  baseURL: 'http://60.168.129.9:2010',
+    baseURL: apiConfig.baseUrl,
 };
 
 // 请求拦截
