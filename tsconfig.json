@@ -10,7 +10,8 @@
     "types": [
       "@dcloudio/types",
       "@types/uni-app",
-      "@uni-helper/uni-types"
+      "@uni-helper/uni-types",
+      "hy-app/global"
     ]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
