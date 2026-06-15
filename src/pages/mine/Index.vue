@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TheCommonPages from '@/components/TheCommonPages.vue';
+import TheRootPages from '@/components/TheRootPages.vue';
 
 definePage({
     style: {
@@ -9,7 +9,7 @@ definePage({
 </script>
 
 <template>
-    <the-common-pages></the-common-pages>
+    <the-root-pages></the-root-pages>
 </template>
 
 <style lang="scss" scoped></style>
