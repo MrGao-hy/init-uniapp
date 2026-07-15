@@ -34,7 +34,8 @@
         "build:quickapp-webview": "uni build -p quickapp-webview",
         "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
         "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
-        "type-check": "vue-tsc --noEmit"
+        "type-check": "vue-tsc --noEmit",
+        "clean": "rimraf node_modules && rimraf pnpm-lock.yaml && npm cache verify --force"
     },
     "dependencies": {
         "@dcloudio/uni-app": "3.0.0-4030620241128001",
@@ -52,8 +53,8 @@
         "@dcloudio/uni-mp-weixin": "3.0.0-4030620241128001",
         "@dcloudio/uni-mp-xhs": "3.0.0-4030620241128001",
         "@dcloudio/uni-quickapp-webview": "3.0.0-4030620241128001",
+        "@hy-app/ui": "^1.0.0",
         "dayjs": "^1.11.18",
-        "hy-app": "^0.7.2",
         "pinia": "^3.0.3",
         "pinia-plugin-unistorage": "^0.1.2",
         "vue": "^3.4.21",
