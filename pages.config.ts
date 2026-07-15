@@ -29,7 +29,7 @@ export default defineUniPages({
   easycom: {
     autoscan: true,
     custom: {
-      '^hy-(.*)': 'hy-app/components/hy-$1/hy-$1.vue'
+      '^hy-(.*)': '@hy-app/ui/components/hy-$1/hy-$1.vue'
     }
   }
 })
