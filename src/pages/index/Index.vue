@@ -10,6 +10,6 @@ definePage({
 
 <template>
     <the-root-pages>
-        <hy-button text="按钮"></hy-button>
+        <hy-button text="按钮" type="error"></hy-button>
     </the-root-pages>
 </template>
