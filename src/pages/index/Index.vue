@@ -1,16 +1,25 @@
 <script setup lang="ts">
-import TheRootPages from '@/components/TheRootPages.vue';
+import { useToast, useMessage } from '@hy-app/ui';
+
+const toast = useToast();
+const message = useMessage();
 
 definePage({
     style: {
         navigationBarTitleText: '首页',
     },
 });
+
+const onToast = () => {
+    toast.success('成功');
+};
+
+const onMessage = () => {
+    message.alert('成功');
+};
 </script>
 
 <template>
-    <the-root-pages>
-        <view></view>
-        <hy-button text="按钮" type="success"></hy-button>
-    </the-root-pages>
+    <hy-button text="成功信息" @click="onToast"></hy-button>
+    <hy-button type="success" text="提示弹窗" @click="onMessage"></hy-button>
 </template>

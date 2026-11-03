@@ -3,10 +3,11 @@ import { resolve } from 'path';
 import uni from '@uni-helper/plugin-uni';
 import UniPages from '@uni-helper/vite-plugin-uni-pages';
 import { useUniPages } from './src/composables';
+import UniKuRoot from '@uni-ku/root';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [UniPages(useUniPages), uni()],
+    plugins: [UniPages(useUniPages), UniKuRoot(), uni()],
     resolve: {
         alias: {
             '@': resolve(__dirname, 'src'),
@@ -22,5 +23,4 @@ export default defineConfig({
             },
         },
     },
-            
 });
