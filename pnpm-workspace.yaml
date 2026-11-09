@@ -1,8 +1,0 @@
-# pnpm 12 起，依赖的 postinstall 脚本必须显式允许，否则 `pnpm install` 会直接以
-# ERR_PNPM_IGNORED_BUILDS 失败（CI 用的是 pnpm 12，会卡在这一步）。
-allowBuilds:
-  '@parcel/watcher': true
-  core-js: true
-  core-js-pure: true
-  esbuild: true
-  vue-demi: true

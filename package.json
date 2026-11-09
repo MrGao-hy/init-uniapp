@@ -35,7 +35,8 @@
         "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
         "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
         "type-check": "vue-tsc --noEmit",
-        "clean": "rimraf node_modules && rimraf pnpm-lock.yaml && npm cache verify --force"
+        "clean": "rimraf node_modules && rimraf pnpm-lock.yaml && npm cache verify --force && pnpm install",
+        "cleanOS": "rm -rf node_modules pnpm-lock.yaml && pnpm store prune && pnpm install"
     },
     "dependencies": {
         "@dcloudio/uni-app": "3.0.0-alpha-5020320260731001",
